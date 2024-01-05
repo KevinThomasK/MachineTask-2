@@ -4,3 +4,21 @@
   box-sizing: border-box;
   text-align: center;
 }
+.dot{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+.options{
+  width: 14px;
+  height: 14px;
+  margin: 0.3rem;
+  border:2.5px solid white;
+  border-radius: 50%;
+  list-style: none;
+  cursor: pointer;
+}
+.colored{
+  background-color: whitesmoke;
+}
