@@ -10,7 +10,7 @@ import landscape from "../assets/landscape.jpg";
 import view from "../assets/view.jpg";
 import pathway from "../assets/pathway.jpg";
 
-const ParallaxComponent = () => {
+const ParallaxComponent = (props) => {
   const section1 = useRef();
   const section2 = useRef();
   const section3 = useRef();
@@ -81,42 +81,42 @@ const ParallaxComponent = () => {
       {/*-------- dots end---------*/}
       <div>
         <div ref={section1}>
-          <Parallax strength={400} bgImage={forest}>
+          <Parallax strength={props.strength} bgImage={forest}>
             <div className="content"></div>
           </Parallax>
         </div>
         <div ref={section2}>
-          <Parallax strength={400} bgImage={landscape}>
+          <Parallax strength={props.strength} bgImage={landscape}>
             <div className="content"></div>
           </Parallax>
         </div>
         <div ref={section3}>
-          <Parallax strength={400} bgImage={view}>
+          <Parallax strength={props.strength} bgImage={view}>
             <div className="content"></div>
           </Parallax>
         </div>
         <div ref={section4}>
-          <Parallax strength={300} bgImage={pathway}>
+          <Parallax strength={props.strength} bgImage={pathway}>
             <div className="content"></div>
           </Parallax>
         </div>
         <div ref={section5}>
-          <Parallax strength={400} bgImage={home}>
+          <Parallax strength={props.strength} bgImage={home}>
             <div className="content"></div>
           </Parallax>
         </div>
         <div ref={section6}>
-          <Parallax strength={400} bgImage={boy}>
+          <Parallax strength={props.strength} bgImage={boy}>
             <div className="content"></div>
           </Parallax>
         </div>
         <div ref={section7}>
-          <Parallax strength={300} bgImage={mountain}>
+          <Parallax strength={props.strength} bgImage={mountain}>
             <div className="content"></div>
           </Parallax>
         </div>
         <div ref={section8}>
-          <Parallax strength={400} bgImage={night}>
+          <Parallax strength={props.strength} bgImage={night}>
             <div className="content"></div>
           </Parallax>
         </div>
